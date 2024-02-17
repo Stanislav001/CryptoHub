@@ -5,6 +5,8 @@ import { useEffect, useState } from "react";
 import Hero from "./components/Hero";
 import Header from "./components/Header";
 import NavMobile from "./components/NavMobile";
+import Stats from "./components/Stats";
+import Why from "./components/Why";
 
 const App = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -25,6 +27,12 @@ const App = () => {
       >
         <NavMobile setIsMobile={setIsMobile} />
       </div>
+
+      <Stats />
+
+      <Why />
+
+      <div className="h-[2000px]"></div>
     </div>
   );
 };
