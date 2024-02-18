@@ -2,11 +2,13 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 
+import Why from "./components/Why";
 import Hero from "./components/Hero";
+import Stats from "./components/Stats";
+import Trade from "./components/Trade";
 import Header from "./components/Header";
 import NavMobile from "./components/NavMobile";
-import Stats from "./components/Stats";
-import Why from "./components/Why";
+import Calculate from "./components/Calculate";
 
 const App = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -19,7 +21,6 @@ const App = () => {
     <div className="overflow-hidden">
       <Header setIsMobile={setIsMobile} />
       <Hero />
-
       <div
         className={`${
           isMobile ? "right-0" : "right-full"
@@ -29,8 +30,9 @@ const App = () => {
       </div>
 
       <Stats />
-
       <Why />
+      <Calculate />
+      <Trade />
 
       <div className="h-[2000px]"></div>
     </div>
