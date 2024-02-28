@@ -18,7 +18,7 @@ const Why = () => {
             data-aos-offset="400"
             data-aos="fade-left"
           >
-            <h2 className="section-title">Why you should choose CRAPPO</h2>
+            <h2 className="section-title">Why you should choose us</h2>
 
             <p className="section-subtitle">
               Experience the next generation cryptocurrency platform. No

@@ -9,6 +9,9 @@ import Trade from "./components/Trade";
 import Header from "./components/Header";
 import NavMobile from "./components/NavMobile";
 import Calculate from "./components/Calculate";
+import Features from "./components/Features";
+import Newsletter from "./components/Newsletter";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -33,8 +36,9 @@ const App = () => {
       <Why />
       <Calculate />
       <Trade />
-
-      <div className="h-[2000px]"></div>
+      <Features />
+      <Newsletter />
+      <Footer />
     </div>
   );
 };

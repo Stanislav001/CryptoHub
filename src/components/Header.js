@@ -1,4 +1,4 @@
-import Logo from "../assets/img/logo.svg";
+import Logo from "../assets/logo.svg";
 import Nav from "./Nav";
 import AccountBtns from "./AccountBtns";
 
@@ -13,17 +13,15 @@ const Header = ({ setIsMobile }) => {
       data-aos-duration="2000"
     >
       <div className="container mx-auto flex items-center justify-between">
-        {/* logo*/}
         <a href="#">
           <img src={Logo} alt="logo" />
         </a>
-        {/* nav & btns*/}
+
         <div className="hidden lg:flex gap-x-[55px]">
           <Nav />
           <AccountBtns />
         </div>
 
-        {/* open nav btn*/}
         <div
           onClick={() => setIsMobile(true)}
           className="lg:hidden cursor-pointer"
